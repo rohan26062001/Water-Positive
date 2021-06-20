@@ -11,7 +11,6 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <!-- CSS Style -->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -30,60 +29,13 @@
 </head>
 
 <style>
-    .row {
-        border-radius: 5px;
-    }
 
-
-    .box {
-        width: 20%;
-        float: left;
-        margin: 50px 20px;
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-    }
-
-    .box h4 {
-        margin-bottom: 10px;
-    }
-
-    .box p {
-        font-size: 15px;
-        line-height: 28px;
-        height: 90px;
-        overflow: hidden;
-    }
-
-    .box a {
-        display: inline-block;
-        color: #fff;
-        background-color: #2196f3;
-        text-decoration: none;
-        padding: 10px 15px;
-        border-radius: 8px;
-        margin-top: 15px;
-    }
-
-    .box a:hover {
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .box.showContent p {
-        height: auto;
-    }
-
-    .box.box.showContent a.readmore-btn {
-        background-color: red;
-    }
 </style>
 
-<body>
+<body style="background-color: green;">
     <!-- Navbar Start -->
     <section class="navbar">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-            <div class="container">
 
                 <!-- Brand -->
                 <a class="navbar-brand" href="index.php" target="_blank">
@@ -91,9 +43,7 @@
                 </a>
 
                 <!-- Collapse -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -103,68 +53,68 @@
                     <!-- Left -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Home</a>
+                            <a class="nav-link" style="color: white; background-color: #32CD32; border-radius:15px; padding:5px; margin: 5px;" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About This Project</a>
+                            <a class="nav-link" style="color: white; background-color: #32CD32; border-radius:15px; padding:5px; margin: 5px;" href="about.html">About This Project</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="authors.html">Authors</a>
+                            <a class="nav-link" style="color: white; background-color: #32CD32; border-radius:15px; padding:5px; margin: 5px;" href="authors.html">Authors</a>
                         </li>
                     </ul>
 
                 </div>
 
-            </div>
         </nav>
-        <br><br>
         <!-- Navbar -->
     </section>
     <!-- Navbar End -->
 
     <!-- Project Details Section Start -->
     <section class="details">
-        <div class="text-center justify-content-center d-flex align-items-center">
-            <div class="box">
-                <img src="images/samarpan deb majumder.jpg" alt="" width="100%" style="border-radius: 8px;">
-                <h4 class="my-2">Samarpan Deb Majumder</h4>
-                <p>Samarpan Deb Majumder has received his Bachelors of Technology (B.Tech)
-                    degree in Mechanical Engineering from the Institute of Engineering and Management in Kolkata in
-                    West Bengal, India. At present, he is an incoming MS (Research) student in the Department of
-                    Civil and Environmental Engineering at the University of Wisconsin Madison in the United States
-                    of America. His research focus is water-energy nexus.
-                    Passionate, with proven ability to pull off any given task from the assignment stage to the
-                    delivery window much ahead of deadlines. Raised approximately 7 Lakh INR funding for various
-                    small-scale and large-scale research projects in collaboration with a few SMEs and reputed
-                    organizations and institutions. Eager to push individual limits and engage in learning cum
-                    real-time implementation atmosphere. Demonstrated leadership in managing people and expertise in
-                    cost reduction and achieving zero energy and zero waste.</p>
-                <a href="javascript:void();" class="readmore-btn">Read More</a>
+        <br><br><br>
+        <div class="container">
+            <div class="row bg-white p-4 m-2" style="border-radius: 15px;">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="images/samarpan deb majumder.jpg" style="border-radius: 15px; height: 300px; width: 300px;" alt="samarpan">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h2 style="color: #E91E63;">Samarpan Deb Majumder</h2>
+                    <p id="sdm">Samarpan Deb Majumder has received his Bachelors of Technology (B.Tech)
+                        degree in Mechanical Engineering from the Institute of Engineering and Management in Kolkata in
+                        West Bengal, India. At present, he is an incoming MS (Research) student in the Department of
+                        Civil and Environmental Engineering at the University of Wisconsin Madison in the United States
+                        of America.....</p>
+                    <button id="sdm-click" class="btn" style="background-color: #E91E63; color: white;" onclick="changeTextSDM()">Read More</button>
+                </div>
             </div>
 
-            <div class="box">
-                <img src="images/ankitdas.jpg" alt="" width="100%" style="border-radius: 8px;">
-                <h4 class="my-2">Ankit Das</h4>
-                <p>Ankit Das has received his Bachelors of Technology (B.Tech) degree in
-                    Mechanical Engineering from the Government College of Engineering and Textile Technology in
-                    Berhampore in West Bengal, India. At present, he is a MS (Research) student in the Department of
-                    Biomechatronics Engineering in the National Taiwan University in Taipei, Taiwan. His research
-                    focus varies from biomechanics to advanced manufacturing systems.</p>
-                <a href="javascript:void();" class="readmore-btn">Read More</a>
+            <div class="row bg-white p-4 m-2" style="border-radius: 15px;">
+                <div class="col-12 col-md-8">
+                    <h2 style="color: #E91E63;">Ankit Das</h2>
+                    <p id="ad">Ankit Das has received his Bachelors of Technology (B.Tech) degree in
+                        Mechanical Engineering from the Government College of Engineering and Textile Technology in
+                        Berhampore in West Bengal, India. At present, he is a MS (Research) student in the Department of
+                        Biomechatronics Engineering in the National Taiwan University .....</p>
+                    <button id="ad-click" class="btn" style="background-color: #E91E63; color: white;" onclick="changeTextAD()">Read More</button>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <br>
+                    <img src="images/ankitdas.jpg" style="border-radius: 15px; height: 300px; width: 300px;" alt="ankit">
+                </div>
             </div>
-            <div class="box">
-                <img src="images/IMG_20210117_185112 - Copy.jpg" alt="" width="100%" style="border-radius: 8px;">
-                <h4 class="my-2">Rohan Das</h4>
-                <p>Rohan Das is pirsuing his Bachelors of Technology (B.Tech) degree in
-                    Information Technology from the Institute of Engineering and Management in Kolkata in West
-                    Bengal, India.<br>
-                    I have a great interest in technology and am passionate about coding. I also have a keen
-                    interest in Web Development and Android Development and wish to learn and gain experience in
-                    these fields. I strongly believe in pairing technology with creativity to create efficient and
-                    powerful tools to shape a smarter future. A finance enthusiast with a strong belief that finance
-                    is the backbone of every company. I believe work ethic is a talent and there is a smart way to
-                    work hard that is far more important than the number of hours you put in.</p>
-                <a href="javascript:void();" class="readmore-btn">Read More</a>
+
+            <div class="row bg-white p-4 m-2" style="border-radius: 15px;">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="images/IMG_20210117_185112 - Copy.jpg" style="border-radius: 15px; height: 300px; width: 340px;" alt="rohan">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h2 style="color: #E91E63;">Rohan Das</h2>
+                    <p id="rd">Rohan Das is pursuing his Bachelors of Technology (B.Tech) degree in
+                        Information Technology from the Institute of Engineering and Management in Kolkata in West
+                        Bengal, India......</p>
+                    <button id="rd-click" class="btn" style="background-color: #E91E63; color: white;" onclick="changeTextRD()">Read More</button>
+                </div>
             </div>
         </div>
     </section>
@@ -178,6 +128,23 @@
         var replaceText = $(this).parent().hasClass("showContent") ? "Read Less" : "Read More";
         $(this).text(replaceText)
     })
-</script>
 
+    var sdm = document.getElementById("sdm");
+
+    function changeTextSDM(){
+        sdm.innerHTML="Samarpan Deb Majumder has received his Bachelors of Technology (B.Tech) degree in Mechanical Engineering from the Institute of Engineering and Management in Kolkata in West Bengal, India. At present, he is an incoming MS (Research) student in the Department of Civil and Environmental Engineering at the University of Wisconsin Madison in the United States of America. His research focus is water-energy nexus. Passionate, with proven ability to pull off any given task from the assignment stage to the delivery window much ahead of deadlines. Raised approximately 7 Lakh INR funding for various small-scale and large-scale research projects in collaboration with a few SMEs and reputed organizations and institutions. Eager to push individual limits and engage in learning cum real-time implementation atmosphere. Demonstrated leadership in managing people and expertise in cost reduction and achieving zero energy and zero waste."
+    }
+
+    var ad = document.getElementById("ad");
+
+    function changeTextAD(){
+        ad.innerHTML="Ankit Das has received his Bachelors of Technology (B.Tech) degree in Mechanical Engineering from the Government College of Engineering and Textile Technology in Berhampore in West Bengal, India. At present, he is a MS (Research) student in the Department of Biomechatronics Engineering in the National Taiwan University in Taipei, Taiwan. His research focus varies from biomechanics to advanced manufacturing systems."
+    }
+
+    var rd = document.getElementById("rd");
+
+    function changeTextRD(){
+        rd.innerHTML="Rohan Das is pirsuing his Bachelors of Technology (B.Tech) degree in Information Technology from the Institute of Engineering and Management in Kolkata in West Bengal, India.<br> I have a great interest in technology and am passionate about coding. I also have a keen interest in Web Development and Android Development and wish to learn and gain experience in these fields. I strongly believe in pairing technology with creativity to create efficient and powerful tools to shape a smarter future. A finance enthusiast with a strong belief that finance is the backbone of every company. I believe work ethic is a talent and there is a smart way to work hard that is far more important than the number of hours you put in."
+    }
+</script>
 </html>

@@ -31,36 +31,35 @@
     <!-- Navbar Start -->
     <section class="navbar">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-            <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="index.php" target="_blank">
+                <a class="navbar-brand" href="index.php" style="color: white;" target="_blank">
                     <strong>Water Positive</strong>
                 </a>
 
                 <!-- Collapse -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" style="background-color: white; border-radius: 50%;"></span>
                 </button>
 
-                <!-- Links  -->
+                <!-- Links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <!-- Left -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Home</a>
+                            <a class="nav-link" style="color: white; background-color: green; border-radius:15px; padding:5px; margin: 5px;" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About This Project</a>
+                            <a class="nav-link" style="color: white; background-color: green; border-radius:15px; padding:5px; margin: 5px;" href="about.html">About This Project</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="authors.html">Authors</a>
+                            <a class="nav-link" style="color: white; background-color: green; border-radius:15px; padding:5px; margin: 5px;" href="authors.html">Authors</a>
                         </li>
                     </ul>
 
                 </div>
-            </div>
+
         </nav>
         <!-- Navbar -->
     </section>
